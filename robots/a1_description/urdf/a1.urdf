@@ -451,6 +451,14 @@
       <geometry>
         <box size="0.2 0.016 0.016"/>
       </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100000.0</mu>
+            <mu2>100000.0</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.006435 0.0 -0.107388"/>
@@ -603,6 +611,14 @@
       <geometry>
         <box size="0.2 0.016 0.016"/>
       </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100000.0</mu>
+            <mu2>100000.0</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.006435 0.0 -0.107388"/>
@@ -755,6 +771,14 @@
       <geometry>
         <box size="0.2 0.016 0.016"/>
       </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100000.0</mu>
+            <mu2>100000.0</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.006435 0.0 -0.107388"/>
@@ -907,6 +931,14 @@
       <geometry>
         <box size="0.2 0.016 0.016"/>
       </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100000.0</mu>
+            <mu2>100000.0</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.006435 0.0 -0.107388"/>
