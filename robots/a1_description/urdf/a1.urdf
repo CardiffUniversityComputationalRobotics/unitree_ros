@@ -51,7 +51,7 @@
     </plugin>
   </gazebo>
   <!-- Show the trajectory of trunk center. -->
-  <gazebo>
+  <!-- <gazebo>
     <plugin filename="libLinkPlot3DPlugin.so" name="3dplotTrunk">
       <frequency>10</frequency>
       <plot>
@@ -60,9 +60,9 @@
         <material>Gazebo/Yellow</material>
       </plot>
     </plugin>
-  </gazebo>
+  </gazebo> -->
   <!-- Show the trajectory of foot. You can add another trajectory about another foot. -->
-  <gazebo>
+  <!-- <gazebo>
     <plugin filename="libLinkPlot3DPlugin.so" name="3dplot">
       <frequency>1000</frequency>
       <plot>
@@ -71,7 +71,7 @@
         <material>Gazebo/Yellow</material>
       </plot>
     </plugin>
-  </gazebo>
+  </gazebo> -->
   <gazebo>
     <plugin filename="libgazebo_ros_force.so" name="gazebo_ros_force">
       <bodyName>trunk</bodyName>
@@ -436,7 +436,7 @@
     <child link="FR_calf"/>
     <axis xyz="0 1 0"/>
     <dynamics damping="0.01" friction="0.2"/>
-    <limit effort="33.5" lower="-2.69653369433" upper="-0.916297857297" velocity="21"/>
+    <limit effort="33.5" lower="-2.69653369433" upper="0" velocity="21"/>
   </joint>
   <link name="FR_calf">
     <visual>
@@ -588,7 +588,7 @@
     <child link="FL_calf"/>
     <axis xyz="0 1 0"/>
     <dynamics damping="0.01" friction="0.2"/>
-    <limit effort="33.5" lower="-2.69653369433" upper="-0.916297857297" velocity="21"/>
+    <limit effort="33.5" lower="-2.69653369433" upper="0" velocity="21"/>
   </joint>
   <link name="FL_calf">
     <visual>
@@ -740,7 +740,7 @@
     <child link="RR_calf"/>
     <axis xyz="0 1 0"/>
     <dynamics damping="0.01" friction="0.2"/>
-    <limit effort="33.5" lower="-2.69653369433" upper="-0.916297857297" velocity="21"/>
+    <limit effort="33.5" lower="-2.69653369433" upper="0" velocity="21"/>
   </joint>
   <link name="RR_calf">
     <visual>
@@ -892,7 +892,7 @@
     <child link="RL_calf"/>
     <axis xyz="0 1 0"/>
     <dynamics damping="0.01" friction="0.2"/>
-    <limit effort="33.5" lower="-2.69653369433" upper="-0.916297857297" velocity="21"/>
+    <limit effort="33.5" lower="-2.69653369433" upper="0" velocity="21"/>
   </joint>
   <link name="RL_calf">
     <visual>
@@ -970,4 +970,3 @@
   </transmission>
   <!-- <xacro:stairs stairs="15" xpos="0" ypos="2.0" zpos="0" /> -->
 </robot>
-
