@@ -1001,4 +1001,53 @@
     </actuator>
   </transmission>
   <!-- <xacro:stairs stairs="15" xpos="0" ypos="2.0" zpos="0" /> -->
+
+  <link name="rplidar">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.028"/>
+      <geometry>
+        <mesh filename="package://a1_description/meshes/rplidar.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="rplidar_fixed" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.14"/>
+    <parent link="trunk"/>
+    <child link="rplidar"/>
+  </joint>
+
+  <gazebo reference="rplidar">
+    <sensor type="ray" name="lds_lfcd_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>0.0</min_angle>
+            <max_angle>6.28319</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.15</min>
+          <max>12</max>
+          <resolution>0.0078539</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_lds_lfcd_controller" filename="libgazebo_ros_laser.so">
+        <topicName>scan</topicName>
+        <frameName>rplidar</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+
 </robot>

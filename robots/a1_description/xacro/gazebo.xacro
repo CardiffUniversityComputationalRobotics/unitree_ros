@@ -62,38 +62,38 @@
     <!-- Foot contacts. -->
     <gazebo reference="FR_calf">
         <sensor name="FR_foot_contact" type="contact">
-        <update_rate>100</update_rate>
-        <plugin name="contactPlugin" filename="libunitreeFootContactPlugin.so"/>
-        <contact>
-            <collision>FR_calf_fixed_joint_lump__FR_foot_collision_1</collision>
-        </contact>
+            <update_rate>100</update_rate>
+            <plugin name="contactPlugin" filename="libunitreeFootContactPlugin.so"/>
+            <contact>
+                <collision>FR_calf_fixed_joint_lump__FR_foot_collision_1</collision>
+            </contact>
         </sensor>
     </gazebo>
     <gazebo reference="FL_calf">
         <sensor name="FL_foot_contact" type="contact">
-        <update_rate>100</update_rate>
-        <plugin name="contactPlugin" filename="libunitreeFootContactPlugin.so"/>
-        <contact>
-            <collision>FL_calf_fixed_joint_lump__FL_foot_collision_1</collision>
-        </contact>
+            <update_rate>100</update_rate>
+            <plugin name="contactPlugin" filename="libunitreeFootContactPlugin.so"/>
+            <contact>
+                <collision>FL_calf_fixed_joint_lump__FL_foot_collision_1</collision>
+            </contact>
         </sensor>
     </gazebo>
     <gazebo reference="RR_calf">
         <sensor name="RR_foot_contact" type="contact">
-        <update_rate>100</update_rate>
-        <plugin name="contactPlugin" filename="libunitreeFootContactPlugin.so"/>
-        <contact>
-            <collision>RR_calf_fixed_joint_lump__RR_foot_collision_1</collision>
-        </contact>
+            <update_rate>100</update_rate>
+            <plugin name="contactPlugin" filename="libunitreeFootContactPlugin.so"/>
+            <contact>
+                <collision>RR_calf_fixed_joint_lump__RR_foot_collision_1</collision>
+            </contact>
         </sensor>
     </gazebo>
     <gazebo reference="RL_calf">
         <sensor name="RL_foot_contact" type="contact">
-        <update_rate>100</update_rate>
-        <plugin name="contactPlugin" filename="libunitreeFootContactPlugin.so"/>
-        <contact>
-            <collision>RL_calf_fixed_joint_lump__RL_foot_collision_1</collision>
-        </contact>
+            <update_rate>100</update_rate>
+            <plugin name="contactPlugin" filename="libunitreeFootContactPlugin.so"/>
+            <contact>
+                <collision>RL_calf_fixed_joint_lump__RL_foot_collision_1</collision>
+            </contact>
         </sensor>
     </gazebo>
 
@@ -135,8 +135,8 @@
     <gazebo reference="trunk">
         <mu1>0.2</mu1>
         <mu2>0.2</mu2>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
 
     <gazebo reference="stick_link">
@@ -162,8 +162,8 @@
         <mu2>0.2</mu2>
         <self_collide>1</self_collide>
         <material>Gazebo/DarkGrey</material>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
     <gazebo reference="FL_calf">
         <mu1>0.2</mu1>
@@ -175,8 +175,8 @@
         <mu2>0.6</mu2>
         <self_collide>1</self_collide>
         <material>Gazebo/DarkGrey</material>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
 
     <!-- FR leg -->
@@ -190,8 +190,8 @@
         <mu2>0.2</mu2>
         <self_collide>1</self_collide>
         <material>Gazebo/DarkGrey</material>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
     <gazebo reference="FR_calf">
         <mu1>0.2</mu1>
@@ -203,8 +203,8 @@
         <mu2>0.6</mu2>
         <self_collide>1</self_collide>
         <material>Gazebo/DarkGrey</material>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
 
     <!-- RL leg -->
@@ -218,8 +218,8 @@
         <mu2>0.2</mu2>
         <self_collide>1</self_collide>
         <material>Gazebo/DarkGrey</material>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
     <gazebo reference="RL_calf">
         <mu1>0.2</mu1>
@@ -231,8 +231,8 @@
         <mu2>0.6</mu2>
         <self_collide>1</self_collide>
         <material>Gazebo/DarkGrey</material>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
 
     <!-- RR leg -->
@@ -246,8 +246,8 @@
         <mu2>0.2</mu2>
         <self_collide>1</self_collide>
         <material>Gazebo/DarkGrey</material>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
     <gazebo reference="RR_calf">
         <mu1>0.2</mu1>
@@ -259,8 +259,55 @@
         <mu2>0.6</mu2>
         <self_collide>1</self_collide>
         <material>Gazebo/DarkGrey</material>
-        <kp  value="1000000.0"/>
-        <kd  value="1.0"/>
+        <kp value="1000000.0"/>
+        <kd value="1.0"/>
     </gazebo>
+
+
+    <!-- <gazebo reference="">
+        <material>Gazebo/Indigo</material>
+        <sensor type="depth" name="realsense_R200">
+            <always_on>true</always_on>
+            <visualize>false</visualize>
+            <camera>
+                <horizontal_fov>1.5184</horizontal_fov>
+                <image>
+                    <width>470</width>
+                    <height>270</height>
+                    <format>R8G8B8</format>
+                </image>
+                <depth_camera></depth_camera>
+                <clip>
+                    <near>0.03</near>
+                    <far>4</far>
+                </clip>
+            </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_openni_kinect.so">
+                <baseline>0.2</baseline>
+                <alwaysOn>true</alwaysOn>
+                <updateRate>15.0</updateRate>
+                <cameraName>d435</cameraName>
+                <frameName>depth_camera_link</frameName>
+                <imageTopicName>rgb/image_raw</imageTopicName>
+                <depthImageTopicName>depth/image_raw</depthImageTopicName>
+                <pointCloudTopicName>depth/points</pointCloudTopicName>
+                <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+                <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+                <pointCloudCutoff>0.4</pointCloudCutoff>
+                <hackBaseline>0.07</hackBaseline>
+                <distortionK1>0.0</distortionK1>
+                <distortionK2>0.0</distortionK2>
+                <distortionK3>0.0</distortionK3>
+                <distortionT1>0.0</distortionT1>
+                <distortionT2>0.0</distortionT2>
+                <CxPrime>0.0</CxPrime>
+                <Cx>0.0</Cx>
+                <Cy>0.0</Cy>
+                <focalLength>0</focalLength>
+                <hackBaseline>0</hackBaseline>
+            </plugin>
+        </sensor>
+    </gazebo> -->
+
 
 </robot>
