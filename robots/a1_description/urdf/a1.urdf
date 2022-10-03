@@ -1004,7 +1004,7 @@
 
   <link name="rplidar">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 -0.028"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.035"/>
       <geometry>
         <mesh filename="package://a1_description/meshes/rplidar.dae"/>
       </geometry>
@@ -1012,7 +1012,7 @@
   </link>
 
   <joint name="rplidar_fixed" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0.175"/>
+    <origin rpy="0 0 0" xyz="0 0 0.14"/>
     <parent link="trunk"/>
     <child link="rplidar"/>
   </joint>
